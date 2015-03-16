@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "ayylmao",
+	"version": "1.0",
+	"description": "Automatically converts 'lol' to 'ayy lmao' on every. single. page.",
+	"content_scripts":
+		[
+			{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+			}
+		]
+}
